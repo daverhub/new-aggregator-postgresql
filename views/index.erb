@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic HTML Page</title>
+
+</head>
+
+<body>
+  <h1></h1>
+
+  <h2>Please submit articles</h2>
+  <br><br>
+
+  <li><form action="/send" method="post">
+    <label for="task_name">Article Title:</label>
+    <input type="text" id="article" name="article" value= <%= article %> > </li>
+
+    <li><label for="task_name">Article URL:</label>
+      <input type="text" id="url" name="url" value= <%= url %> > </li>
+
+
+      <li><label for="task_name">Article Description:</label>
+        <input type="text" id="des" name="des" value= <%= des %> > <br></li>
+
+    <input type="submit">
+  </form>
+</body>
+</html>

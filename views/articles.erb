@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic HTML Page</title>
+
+</head>
+
+<body>
+  <h1></h1>
+
+  <h2>Breaking news!</h2>
+  <ul>
+
+    <% articles.each do |article| %>
+
+    <%= article["title"] %>: <%= article["description"] %><br>
+    <a href = <%= article["url"] %>><%= article["url"] %></a><br><br>
+    <% end %>
+  </ul>
+  </form>
+</body>
+</html>
